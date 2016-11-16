@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A8ECEC751DDB5123005F0534 /* TestShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8ECEC751DDB5123005F0534 /* LocandaDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocandaDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8ECEC781DDB5123005F0534 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A8ECEC791DDB5123005F0534 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A8ECEC7C1DDB5123005F0534 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,10 +45,10 @@
 		A8ECEC841DDB5123005F0534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8ECEC871DDB5123005F0534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8ECEC891DDB5123005F0534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8ECEC8E1DDB5123005F0534 /* TestShellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestShellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8ECEC8E1DDB5123005F0534 /* LocandaDashboard.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocandaDashboard.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8ECEC921DDB5123005F0534 /* TestShellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestShellTests.m; sourceTree = "<group>"; };
 		A8ECEC941DDB5123005F0534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8ECEC991DDB5123005F0534 /* TestShellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestShellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8ECEC991DDB5123005F0534 /* LocandaDashboard.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocandaDashboard.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8ECEC9D1DDB5123005F0534 /* TestShellUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestShellUITests.m; sourceTree = "<group>"; };
 		A8ECEC9F1DDB5123005F0534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,9 +91,9 @@
 		A8ECEC761DDB5123005F0534 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A8ECEC751DDB5123005F0534 /* TestShell.app */,
-				A8ECEC8E1DDB5123005F0534 /* TestShellTests.xctest */,
-				A8ECEC991DDB5123005F0534 /* TestShellUITests.xctest */,
+				A8ECEC751DDB5123005F0534 /* LocandaDashboard.app */,
+				A8ECEC8E1DDB5123005F0534 /* LocandaDashboard.xctest */,
+				A8ECEC991DDB5123005F0534 /* LocandaDashboard.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A8ECEC741DDB5123005F0534 /* TestShell */ = {
+		A8ECEC741DDB5123005F0534 /* LocandaDashboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8ECECA21DDB5123005F0534 /* Build configuration list for PBXNativeTarget "TestShell" */;
+			buildConfigurationList = A8ECECA21DDB5123005F0534 /* Build configuration list for PBXNativeTarget "LocandaDashboard" */;
 			buildPhases = (
 				A8ECEC711DDB5123005F0534 /* Sources */,
 				A8ECEC721DDB5123005F0534 /* Frameworks */,
@@ -155,14 +155,14 @@
 			);
 			dependencies = (
 			);
-			name = TestShell;
+			name = LocandaDashboard;
 			productName = TestShell;
-			productReference = A8ECEC751DDB5123005F0534 /* TestShell.app */;
+			productReference = A8ECEC751DDB5123005F0534 /* LocandaDashboard.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A8ECEC8D1DDB5123005F0534 /* TestShellTests */ = {
+		A8ECEC8D1DDB5123005F0534 /* LocandaDashboardTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8ECECA51DDB5123005F0534 /* Build configuration list for PBXNativeTarget "TestShellTests" */;
+			buildConfigurationList = A8ECECA51DDB5123005F0534 /* Build configuration list for PBXNativeTarget "LocandaDashboardTests" */;
 			buildPhases = (
 				A8ECEC8A1DDB5123005F0534 /* Sources */,
 				A8ECEC8B1DDB5123005F0534 /* Frameworks */,
@@ -173,14 +173,14 @@
 			dependencies = (
 				A8ECEC901DDB5123005F0534 /* PBXTargetDependency */,
 			);
-			name = TestShellTests;
+			name = LocandaDashboardTests;
 			productName = TestShellTests;
-			productReference = A8ECEC8E1DDB5123005F0534 /* TestShellTests.xctest */;
+			productReference = A8ECEC8E1DDB5123005F0534 /* LocandaDashboard.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A8ECEC981DDB5123005F0534 /* TestShellUITests */ = {
+		A8ECEC981DDB5123005F0534 /* LocandaDashboardUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8ECECA81DDB5123005F0534 /* Build configuration list for PBXNativeTarget "TestShellUITests" */;
+			buildConfigurationList = A8ECECA81DDB5123005F0534 /* Build configuration list for PBXNativeTarget "LocandaDashboardUITests" */;
 			buildPhases = (
 				A8ECEC951DDB5123005F0534 /* Sources */,
 				A8ECEC961DDB5123005F0534 /* Frameworks */,
@@ -191,9 +191,9 @@
 			dependencies = (
 				A8ECEC9B1DDB5123005F0534 /* PBXTargetDependency */,
 			);
-			name = TestShellUITests;
+			name = LocandaDashboardUITests;
 			productName = TestShellUITests;
-			productReference = A8ECEC991DDB5123005F0534 /* TestShellUITests.xctest */;
+			productReference = A8ECEC991DDB5123005F0534 /* LocandaDashboard.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A8ECEC701DDB5122005F0534 /* Build configuration list for PBXProject "TestShell" */;
+			buildConfigurationList = A8ECEC701DDB5122005F0534 /* Build configuration list for PBXProject "LocandaDashboard" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,9 +231,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A8ECEC741DDB5123005F0534 /* TestShell */,
-				A8ECEC8D1DDB5123005F0534 /* TestShellTests */,
-				A8ECEC981DDB5123005F0534 /* TestShellUITests */,
+				A8ECEC741DDB5123005F0534 /* LocandaDashboard */,
+				A8ECEC8D1DDB5123005F0534 /* LocandaDashboardTests */,
+				A8ECEC981DDB5123005F0534 /* LocandaDashboardUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,12 +297,12 @@
 /* Begin PBXTargetDependency section */
 		A8ECEC901DDB5123005F0534 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A8ECEC741DDB5123005F0534 /* TestShell */;
+			target = A8ECEC741DDB5123005F0534 /* LocandaDashboard */;
 			targetProxy = A8ECEC8F1DDB5123005F0534 /* PBXContainerItemProxy */;
 		};
 		A8ECEC9B1DDB5123005F0534 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A8ECEC741DDB5123005F0534 /* TestShell */;
+			target = A8ECEC741DDB5123005F0534 /* LocandaDashboard */;
 			targetProxy = A8ECEC9A1DDB5123005F0534 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -408,7 +408,7 @@
 				INFOPLIST_FILE = TestShell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Wellnet.TestShell;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocandaDashboard;
 			};
 			name = Debug;
 		};
@@ -420,7 +420,7 @@
 				INFOPLIST_FILE = TestShell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Wellnet.TestShell;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocandaDashboard;
 			};
 			name = Release;
 		};
@@ -432,8 +432,8 @@
 				INFOPLIST_FILE = TestShellTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Wellnet.TestShellTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestShell.app/Contents/MacOS/TestShell";
+				PRODUCT_NAME = LocandaDashboard;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocandaDashboard.app/Contents/MacOS/LocandaDashboard";
 			};
 			name = Debug;
 		};
@@ -445,8 +445,8 @@
 				INFOPLIST_FILE = TestShellTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Wellnet.TestShellTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestShell.app/Contents/MacOS/TestShell";
+				PRODUCT_NAME = LocandaDashboard;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocandaDashboard.app/Contents/MacOS/LocandaDashboard";
 			};
 			name = Release;
 		};
@@ -457,7 +457,7 @@
 				INFOPLIST_FILE = TestShellUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Wellnet.TestShellUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocandaDashboard;
 				TEST_TARGET_NAME = TestShell;
 			};
 			name = Debug;
@@ -469,7 +469,7 @@
 				INFOPLIST_FILE = TestShellUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Wellnet.TestShellUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocandaDashboard;
 				TEST_TARGET_NAME = TestShell;
 			};
 			name = Release;
@@ -477,7 +477,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A8ECEC701DDB5122005F0534 /* Build configuration list for PBXProject "TestShell" */ = {
+		A8ECEC701DDB5122005F0534 /* Build configuration list for PBXProject "LocandaDashboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8ECECA01DDB5123005F0534 /* Debug */,
@@ -486,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8ECECA21DDB5123005F0534 /* Build configuration list for PBXNativeTarget "TestShell" */ = {
+		A8ECECA21DDB5123005F0534 /* Build configuration list for PBXNativeTarget "LocandaDashboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8ECECA31DDB5123005F0534 /* Debug */,
@@ -495,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8ECECA51DDB5123005F0534 /* Build configuration list for PBXNativeTarget "TestShellTests" */ = {
+		A8ECECA51DDB5123005F0534 /* Build configuration list for PBXNativeTarget "LocandaDashboardTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8ECECA61DDB5123005F0534 /* Debug */,
@@ -504,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8ECECA81DDB5123005F0534 /* Build configuration list for PBXNativeTarget "TestShellUITests" */ = {
+		A8ECECA81DDB5123005F0534 /* Build configuration list for PBXNativeTarget "LocandaDashboardUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8ECECA91DDB5123005F0534 /* Debug */,

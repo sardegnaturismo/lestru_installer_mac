@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A8ECEC741DDB5123005F0534"
-               BuildableName = "TestShell.app"
-               BlueprintName = "TestShell"
-               ReferencedContainer = "container:TestShell.xcodeproj">
+               BuildableName = "LocandaDashboard.app"
+               BlueprintName = "LocandaDashboard"
+               ReferencedContainer = "container:LocandaDashboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A8ECEC8D1DDB5123005F0534"
-               BuildableName = "TestShellTests.xctest"
-               BlueprintName = "TestShellTests"
-               ReferencedContainer = "container:TestShell.xcodeproj">
+               BuildableName = "LocandaDashboard.xctest"
+               BlueprintName = "LocandaDashboardTests"
+               ReferencedContainer = "container:LocandaDashboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A8ECEC981DDB5123005F0534"
-               BuildableName = "TestShellUITests.xctest"
-               BlueprintName = "TestShellUITests"
-               ReferencedContainer = "container:TestShell.xcodeproj">
+               BuildableName = "LocandaDashboard.xctest"
+               BlueprintName = "LocandaDashboardUITests"
+               ReferencedContainer = "container:LocandaDashboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A8ECEC741DDB5123005F0534"
-            BuildableName = "TestShell.app"
-            BlueprintName = "TestShell"
-            ReferencedContainer = "container:TestShell.xcodeproj">
+            BuildableName = "LocandaDashboard.app"
+            BlueprintName = "LocandaDashboard"
+            ReferencedContainer = "container:LocandaDashboard.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A8ECEC741DDB5123005F0534"
-            BuildableName = "TestShell.app"
-            BlueprintName = "TestShell"
-            ReferencedContainer = "container:TestShell.xcodeproj">
+            BuildableName = "LocandaDashboard.app"
+            BlueprintName = "LocandaDashboard"
+            ReferencedContainer = "container:LocandaDashboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A8ECEC741DDB5123005F0534"
-            BuildableName = "TestShell.app"
-            BlueprintName = "TestShell"
-            ReferencedContainer = "container:TestShell.xcodeproj">
+            BuildableName = "LocandaDashboard.app"
+            BlueprintName = "LocandaDashboard"
+            ReferencedContainer = "container:LocandaDashboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

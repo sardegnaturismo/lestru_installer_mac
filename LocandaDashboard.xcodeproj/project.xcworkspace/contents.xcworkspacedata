@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TestShell.xcodeproj">
+      location = "self:/Users/Emanuele/Desktop/TestShell/LocandaDashboard.xcodeproj">
    </FileRef>
 </Workspace>

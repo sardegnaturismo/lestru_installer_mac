@@ -22,6 +22,15 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    //stoppo il server
+    NSTask *task = [[NSTask alloc] init];
+    NSString *launchPath = @"/Applications/LocandaServer/bin/shutdown.sh";
+    [task setLaunchPath:launchPath];
+    [task launch];
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+    return YES;
 }
 
 #pragma mark - Core Data stack

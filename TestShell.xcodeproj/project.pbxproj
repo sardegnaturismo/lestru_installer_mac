@@ -101,6 +101,8 @@
 		A8ECEC771DDB5123005F0534 /* TestShell */ = {
 			isa = PBXGroup;
 			children = (
+				A8ECEC781DDB5123005F0534 /* AppDelegate.h */,
+				A8ECEC791DDB5123005F0534 /* AppDelegate.m */,
 				A8ECEC7E1DDB5123005F0534 /* ViewController.h */,
 				A8ECEC7F1DDB5123005F0534 /* ViewController.m */,
 				A8ECEC841DDB5123005F0534 /* Assets.xcassets */,
@@ -115,8 +117,6 @@
 		A8ECEC7B1DDB5123005F0534 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A8ECEC781DDB5123005F0534 /* AppDelegate.h */,
-				A8ECEC791DDB5123005F0534 /* AppDelegate.m */,
 				A8ECEC7C1DDB5123005F0534 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -493,6 +493,7 @@
 				A8ECECA41DDB5123005F0534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8ECECA51DDB5123005F0534 /* Build configuration list for PBXNativeTarget "TestShellTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +502,7 @@
 				A8ECECA71DDB5123005F0534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8ECECA81DDB5123005F0534 /* Build configuration list for PBXNativeTarget "TestShellUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +511,7 @@
 				A8ECECAA1DDB5123005F0534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

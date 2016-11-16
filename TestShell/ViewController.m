@@ -29,14 +29,14 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         //stoppo il server
         NSTask *task = [[NSTask alloc] init];
-        NSString *launchPath = @"/Applications/apache-tomcat-7.0.72/bin/shutdown.sh";
+        NSString *launchPath = @"/Applications/LocandaServer/bin/shutdown.sh";
         [task setLaunchPath:launchPath];
         [task launch];
         
         
         //avvio il server
         task = [[NSTask alloc] init];
-        launchPath = @"/Applications/apache-tomcat-7.0.72/bin/catalina.sh";
+        launchPath = @"/Applications/LocandaServer/bin/catalina.sh";
         [task setLaunchPath:launchPath];
         [task setArguments:@[ @"run"]];
         [task launch];
@@ -51,9 +51,7 @@
     
     
     
-    
-    NSLog(@"Finito!");
-}
+    }
 
 - (void) stopSpinner:(NSTimer*)t {
     [spinner setHidden:YES];
@@ -71,7 +69,7 @@
     
     //stoppo il server
     NSTask *task = [[NSTask alloc] init];
-    NSString *launchPath = @"/Applications/apache-tomcat-7.0.72/bin/shutdown.sh";
+    NSString *launchPath = @"/Applications/LocandaServer/bin/shutdown.sh";
     [task setLaunchPath:launchPath];
     [task launch];
     

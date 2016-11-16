@@ -9,6 +9,18 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController
+{
+    __weak IBOutlet NSButton *stopButton;
+    __weak IBOutlet NSButton *startButton;
+    __weak IBOutlet NSTextField *startedLabel;
+    __weak IBOutlet NSTextField *stoppedLabel;
+    __weak IBOutlet NSTextField *startingLabel;
+    __weak IBOutlet NSProgressIndicator *spinner;
+}
+
+
+-(IBAction)startServer:(id)sender;
+-(IBAction)stopServer:(id)sender;
 
 
 @end

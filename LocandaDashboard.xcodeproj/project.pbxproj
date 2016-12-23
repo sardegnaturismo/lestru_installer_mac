@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A82CFFD81DDDFF5F00637894 /* locanda_server-view.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A82CFFD71DDDFF5F00637894 /* locanda_server-view.jpeg */; };
 		A8ECEC7A1DDB5123005F0534 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC791DDB5123005F0534 /* AppDelegate.m */; };
 		A8ECEC7D1DDB5123005F0534 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC7C1DDB5123005F0534 /* main.m */; };
 		A8ECEC801DDB5123005F0534 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC7F1DDB5123005F0534 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A82CFFD71DDDFF5F00637894 /* locanda_server-view.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "locanda_server-view.jpeg"; path = "../../../Downloads/locanda_server-view.jpeg"; sourceTree = "<group>"; };
 		A8ECEC751DDB5123005F0534 /* LocandaDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocandaDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8ECEC781DDB5123005F0534 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A8ECEC791DDB5123005F0534 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		A8ECEC771DDB5123005F0534 /* TestShell */ = {
 			isa = PBXGroup;
 			children = (
+				A82CFFD71DDDFF5F00637894 /* locanda_server-view.jpeg */,
 				A8ECEC781DDB5123005F0534 /* AppDelegate.h */,
 				A8ECEC791DDB5123005F0534 /* AppDelegate.m */,
 				A8ECEC7E1DDB5123005F0534 /* ViewController.h */,
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82CFFD81DDDFF5F00637894 /* locanda_server-view.jpeg in Resources */,
 				A8ECEC851DDB5123005F0534 /* Assets.xcassets in Resources */,
 				A8ECEC881DDB5123005F0534 /* Main.storyboard in Resources */,
 			);

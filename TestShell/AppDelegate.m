@@ -24,7 +24,7 @@
     // Insert code here to tear down your application
     //stoppo il server
     NSTask *task = [[NSTask alloc] init];
-    NSString *launchPath = @"/Applications/LocandaServer/bin/shutdown.sh";
+    NSString *launchPath = @"/Applications/LocandaServer9/bin/shutdown.sh";
     [task setLaunchPath:launchPath];
     [task launch];
 }

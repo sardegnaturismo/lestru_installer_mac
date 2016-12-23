@@ -15,7 +15,7 @@
     __weak IBOutlet NSTextField *startedLabel;
     __weak IBOutlet NSTextField *stoppedLabel;
     __weak IBOutlet NSTextField *startingLabel;
-    __weak IBOutlet NSProgressIndicator *spinner;
+    __weak IBOutlet NSProgressIndicator *progressBar;
 }
 
 

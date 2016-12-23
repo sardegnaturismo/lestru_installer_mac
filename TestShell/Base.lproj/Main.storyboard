@@ -719,9 +719,6 @@
                                 <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <font key="titleFont" metaFont="system"/>
                             </box>
-                            <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="wkd-8T-wkR">
-                                <rect key="frame" x="372" y="169" width="32" height="32"/>
-                            </progressIndicator>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J0r-fu-TcN">
                                 <rect key="frame" x="20" y="20" width="440" height="99"/>
                                 <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" drawsBackground="YES" id="obI-RA-IMc">
@@ -739,10 +736,13 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Tfz-iy-KzF">
+                                <rect key="frame" x="307" y="177" width="153" height="20"/>
+                            </progressIndicator>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="spinner" destination="wkd-8T-wkR" id="24v-iZ-uM5"/>
+                        <outlet property="progressBar" destination="Tfz-iy-KzF" id="xyP-rx-5R6"/>
                         <outlet property="startButton" destination="avg-FP-Gd3" id="0iZ-iV-H3h"/>
                         <outlet property="startedLabel" destination="d96-7p-ytw" id="93O-b4-zud"/>
                         <outlet property="startingLabel" destination="m8x-15-8iQ" id="XIk-is-r73"/>

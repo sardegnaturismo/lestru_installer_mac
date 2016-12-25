@@ -99,6 +99,7 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
     
     startButton.enabled = YES;
     stopButton.enabled = YES;
+    browserButton.enabled = NO;
     
     stoppedLabel.hidden = NO;
     startingLabel.hidden = YES;
@@ -107,6 +108,8 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
 
 - (void) starting {
     progressBar.hidden = NO;
+    
+    browserButton.enabled = NO;
     
     stoppedLabel.hidden = YES;
     startingLabel.hidden = NO;
@@ -118,10 +121,15 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
     
     startButton.enabled = YES;
     stopButton.enabled = YES;
+    browserButton.enabled = YES;
     
     stoppedLabel.hidden = YES;
     startingLabel.hidden = YES;
     startedLabel.hidden = NO;
+}
+
+-(IBAction)pushApp1:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://localhost:8080/Locanda"]];
 }
 
 // metodo che ritorna il path all'ultimo file di log creato da catalina
@@ -162,19 +170,23 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
 
 
 -(IBAction)stopServer:(id)sender{
+    
+    //cambio la label
+    [self stopped];
+    
     //stoppo il server
     NSTask *task = [[NSTask alloc] init];
     NSString *launchPath = @"/Applications/LocandaServer9/bin/shutdown.sh";
     [task setLaunchPath:launchPath];
     [task launch];
-    
-    [self stopped];
+        
 }
 
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    browserButton.enabled = NO;
     progressBar.hidden = YES;
     startedLabel.hidden = YES;
     stoppedLabel.hidden = NO;

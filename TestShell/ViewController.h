@@ -10,11 +10,14 @@
 
 @interface ViewController : NSViewController
 {
+    __weak IBOutlet NSButton *browserButton;
     __weak IBOutlet NSButton *stopButton;
     __weak IBOutlet NSButton *startButton;
-    __weak IBOutlet NSTextField *startedLabel;
+    
     __weak IBOutlet NSTextField *stoppedLabel;
     __weak IBOutlet NSTextField *startingLabel;
+    __weak IBOutlet NSTextField *startedLabel;
+    
     __weak IBOutlet NSProgressIndicator *progressBar;
 }
 

@@ -12,19 +12,13 @@
 
 int numberOfRows = 0;
 int countedRows = 0;
+bool visible = YES;
 NSString *fileContents;
 NSArray *lines;
 NSString *logsPath = @"/Applications/LocandaServer9/logs";
 
 
 -(IBAction)startServer:(id)sender{
-
-    startingLabel.hidden = NO;
-    stoppedLabel.hidden = YES;
-    startedLabel.hidden = YES;
-    
-    startButton.enabled = NO;
-    stopButton.enabled = NO;
     
     //Thread che gestisce l'avvio del server tomcat
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
@@ -33,6 +27,10 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
         NSString *launchPath = @"/Applications/LocandaServer9/bin/shutdown.sh";
         [task setLaunchPath:launchPath];
         [task launch];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self stopped];
+        });
         
         //avvio il server
         task = [[NSTask alloc] init];
@@ -43,13 +41,13 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
         
     });
     //TODO: non so se necessario
-    [NSThread sleepForTimeInterval:5.0f];
+    [NSThread sleepForTimeInterval:2.0f];
     
     
     //questo è il path dell'ultimo file di log
     NSString *logFilePath = [self getLogFile];
-    fileContents = [NSString stringWithContentsOfFile:logFilePath];
-    lines = [fileContents componentsSeparatedByString:@"\n"];
+    
+    
     
     numberOfRows = [lines count] + 1000;
     
@@ -57,41 +55,66 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
     //thread che gestisce l'update della progress bar
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         
-        //fintanto che le righe contate sono minori di quelle complessive aggiorno la bar
-        while(countedRows < numberOfRows){
-            [NSThread sleepForTimeInterval:1.0f];
-            //TODO: update bar
-            [progressBar incrementBy:1.0];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self starting];
+        });
+        
+        
+        for (NSInteger i = 1; i <= progressBar.maxValue; i = i + 1){
             
-            Boolean endReached = false;
-            while(!endReached){
-                
-                [NSThread sleepForTimeInterval:1.0f];
-                
-                fileContents = [NSString stringWithContentsOfFile:logFilePath];
-                lines = [fileContents componentsSeparatedByString:@"\n"];
-                
-                countedRows = [lines count];
-                
-                NSString *last = lines[[lines count] - 2];
-                
-                if([last rangeOfString:@"Server startup in"].location != NSNotFound){
-                    endReached = true;
-                    [self stopSpinner];
-                }
+            fileContents = [NSString stringWithContentsOfFile:logFilePath];
+            lines = [fileContents componentsSeparatedByString:@"\n"];
+            NSString *last = lines[[lines count] - 2];
+    
+            if([last rangeOfString:@"Server startup in"].location == NSNotFound){
+                [NSThread sleepForTimeInterval:1.0];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [progressBar setDoubleValue:(double)i];
+                    [progressBar displayIfNeeded];
+                });
+            }else{
+                i = progressBar.maxValue;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self started];
+                });
             }
         }
+        
     });
     
     
     
 }
 
-- (void) stopSpinner {
+- (void) stopped {
+    progressBar.hidden = YES;
+    [progressBar setDoubleValue:(double)0];
+    
     startButton.enabled = YES;
     stopButton.enabled = YES;
-    startedLabel.hidden = NO;
+    
+    stoppedLabel.hidden = NO;
     startingLabel.hidden = YES;
+    startedLabel.hidden = YES;
+}
+
+- (void) starting {
+    progressBar.hidden = NO;
+    
+    stoppedLabel.hidden = YES;
+    startingLabel.hidden = NO;
+    startedLabel.hidden = YES;
+}
+
+- (void) started {
+    progressBar.hidden = YES;
+    
+    startButton.enabled = YES;
+    stopButton.enabled = YES;
+    
+    stoppedLabel.hidden = YES;
+    startingLabel.hidden = YES;
+    startedLabel.hidden = NO;
 }
 
 // metodo che ritorna il path all'ultimo file di log creato da catalina
@@ -132,21 +155,20 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
 
 
 -(IBAction)stopServer:(id)sender{
-    startedLabel.hidden = YES;
-    stoppedLabel.hidden = NO;
-    
     //stoppo il server
     NSTask *task = [[NSTask alloc] init];
     NSString *launchPath = @"/Applications/LocandaServer9/bin/shutdown.sh";
     [task setLaunchPath:launchPath];
     [task launch];
     
+    [self stopped];
 }
 
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    progressBar.hidden = YES;
     startedLabel.hidden = YES;
     stoppedLabel.hidden = NO;
     startingLabel.hidden = YES;

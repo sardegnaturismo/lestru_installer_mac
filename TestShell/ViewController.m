@@ -73,7 +73,14 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
                     [progressBar displayIfNeeded];
                 });
             }else{
-                i = progressBar.maxValue;
+                while(i <  progressBar.maxValue){
+                    [NSThread sleepForTimeInterval:0.5];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [progressBar setDoubleValue:(double)i];
+                        [progressBar displayIfNeeded];
+                    });
+                    i += 10;
+                }
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self started];
                 });

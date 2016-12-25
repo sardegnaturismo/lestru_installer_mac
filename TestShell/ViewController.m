@@ -79,7 +79,7 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
                         [progressBar setDoubleValue:(double)i];
                         [progressBar displayIfNeeded];
                     });
-                    i += 10;
+                    i += 20;
                 }
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self started];
@@ -98,7 +98,7 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
     [progressBar setDoubleValue:(double)0];
     
     startButton.enabled = YES;
-    stopButton.enabled = YES;
+    stopButton.enabled = NO;
     browserButton.enabled = NO;
     
     stoppedLabel.hidden = NO;
@@ -109,6 +109,9 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
 - (void) starting {
     progressBar.hidden = NO;
     
+    startButton.enabled = NO;
+    stopButton.enabled = NO;
+    browserButton.enabled = NO;
     browserButton.enabled = NO;
     
     stoppedLabel.hidden = YES;
@@ -128,6 +131,8 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
     startedLabel.hidden = NO;
 }
 
+//metodo richiamato quando si clicca sul pulsante "Avvia Locanda". Non fa altro che aprire
+//il browser su localhost:8080/Locanda
 -(IBAction)pushApp1:(id)sender {
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://localhost:8080/Locanda"]];
 }

@@ -723,7 +723,7 @@
                                 <rect key="frame" x="20" y="20" width="440" height="99"/>
                                 <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" drawsBackground="YES" id="obI-RA-IMc">
                                     <font key="font" metaFont="system"/>
-                                    <string key="title">Per avviare il server cliccare su "Avvia server" e aspettare che la fase di avvio sia completata. Una volta che il server è attivo è possibile raggiungere l'applicativo all'indirizzo web: localhost:8080/Locanda.         Per spegnere il server basta cliccare su "Stoppa il server" oppure chiudere l'applicazione.</string>
+                                    <string key="title">Per avviare il server cliccare su "Avvia server" e aspettare che la fase di avvio sia completata. Una volta avviato il server sarà possibile utilizzare l'applicativo cliccando su "Avvia Locanda". Per spegnere il server cliccare su "Stoppa il server" oppure chiudere l'applicazione.</string>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </textFieldCell>

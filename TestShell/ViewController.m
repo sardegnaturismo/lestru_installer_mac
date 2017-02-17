@@ -32,6 +32,7 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
             [self stopped];
         });
         
+        
         //avvio il server
         task = [[NSTask alloc] init];
         launchPath = @"/Applications/LocandaServer9/bin/catalina.sh";
@@ -122,7 +123,7 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
 - (void) started {
     progressBar.hidden = YES;
     
-    startButton.enabled = YES;
+    startButton.enabled = NO;
     stopButton.enabled = YES;
     browserButton.enabled = YES;
     
@@ -194,7 +195,7 @@ NSString *logsPath = @"/Applications/LocandaServer9/logs";
     browserButton.enabled = NO;
     progressBar.hidden = YES;
     startedLabel.hidden = YES;
-    stoppedLabel.hidden = NO;
+    stoppedLabel.hidden = YES;
     startingLabel.hidden = YES;
     
     // Do any additional setup after loading the view.
